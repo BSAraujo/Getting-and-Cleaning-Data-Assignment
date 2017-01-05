@@ -18,3 +18,7 @@ Applies the following steps to the data, creating a tidy data set, as requested:
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 For the script to work you only need to have an active internet connection.
+The script creates a folder called "Assignment Dataset" and downloads to this folder the zip file from the link mentioned above.
+It then unzips all the files into this new folder, and loads the data into R. The data from the folders named "Inertial Signals" are not used in the analysis.
+The script creates two data sets: "data", which is the result of steps 1 to 4, and "avg_data", which is the result of steps 1 to 5.
+"data" contains 88 columns (or variables) and 10299 rows (or observations). The first identifies the subject (subject id), the second column is the activity description and the rest of the columns are the measurements (only the measurements on the mean and standard for each measurement).
